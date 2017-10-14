@@ -1,0 +1,227 @@
+:root {
+  --brand-color: #e88472;
+  --font-color: #454b54;
+  --background-color: #fff;
+  --border-color: #eef2f7;
+  --link-color: #578aca;
+  --nav-font-color: #888;
+}
+
+/* clear default formatting */
+body, div, a, h1, h2, span, header, nav, ul, li, h3, section, p:first-child {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+a {
+  color: var(--link-color);
+}
+section {
+  line-height: 1.3em;
+  margin: 3% 2%;
+}
+h1{
+  font-family: "Georgia";
+  font-size: 2em;
+  color: var(--brand-color);
+  line-height: 2em;
+}
+h2{
+  font-family: "Georgia";
+  line-height: 1.3em;
+}
+article{
+  padding-bottom: 2%;
+}
+
+
+
+
+/* Start Main Navigation */
+header {
+  border-bottom: solid var(--border-color) 1px;
+  padding: 2px;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav li a {
+  color: var(--nav-font-color);
+  text-decoration: none;
+  transition: 0.3s;
+  text-transform: uppercase;
+  display: block;
+}
+nav li a:hover {
+  opacity: .7;
+  color: var(--brand-color);
+}
+nav li:not(:first-child) {
+  display: none;
+  padding: 6px;
+}
+nav li.menu-icon {
+  float: right;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menu-icon img {
+  width: 40px;
+  padding-top: 3px;
+}
+nav .responsive li {
+  display: block;
+}
+nav .responsive li a {
+  display: block;
+  text-align: left;
+}
+nav .responsive li:not(:last-child):not(:nth-last-child(2)) {
+  border-bottom: solid var(--border-color) 1px;
+}
+/* End Main Navigation */
+
+
+
+/* Start logo styles */
+.logo {
+  color: var(--brand-color);
+  font-family: "Georgia";
+  font-weight: bold;
+  text-transform: none;
+}
+.logo div {
+  font-size: 2em;
+  display: inline;
+}
+.logo img {
+  border-radius: 50%;
+  border: solid var(--background-color) 2px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+}
+.logo span {
+  vertical-align: middle;
+}
+/* End logo styles */
+
+
+
+/* Start home page styles */
+.home-logo {
+  min-width: 300px;
+  position: absolute;
+  left: 18px;
+}
+.home-logo img {
+  vertical-align: sub;
+  width: 33%;
+}
+.home-logo span {
+  line-height: 2em;
+  font-size: 4em;
+  text-shadow: var(--background-color) 1px -1px;
+}
+.home-jump {
+  top: 363px;
+}
+.home-shrink {
+  top: 302px;
+}
+.picture-main {
+  background: url("../images/sunset-crop-bright-flip.png") no-repeat 0% 0%;
+  height: 300px;
+  background-size: cover;
+}
+.byline {
+  margin-top: 100px;
+  margin-left: 20px;
+  font-size: 2em;
+  line-height: 1em;
+}
+/* End home */
+
+.full-width-img {
+  margin: 0;
+  width: 100%;
+}
+.block {
+  display: block;
+}
+
+
+.dates {
+  font-style: italic;
+  font-size: 0.85em;
+  color: var(--link-color);
+  display: block;
+}
+.role {
+  line-height: 1.5em;
+  display: block;
+  margin-top: 2%;
+}
+.indent {
+  margin-left: 10%;
+}
+.indent li {
+  margin-top: 2%;
+}
+
+@media all and (min-width: 420px) {
+  .menu-icon img {
+    display: none;
+  }
+  section {
+    margin-left: 3%;
+  }
+  nav li {
+    display: inline;
+  }
+  nav li a {
+    display: inline;
+    padding-right: 2%;
+  }
+  nav li:not(:first-child) {
+    display: inline;
+  }
+
+  .wrap-right {
+    display:inline-block;
+    float: right;
+    padding-left: 2%;
+  }
+  .two-thirds{
+    width: 60%;
+  }
+  .one-third{
+    width: 30%;
+  }
+
+  .dates{
+    display: inline;
+  }
+  .role{
+    display: inline;
+  }
+  .picture-main{
+    height: 500px;
+  }
+  .home-logo{
+    top: 495px;
+    left: 18px;
+  }
+  .box-shadow {
+    box-shadow: var(--nav-font-color) 4px 4px 4px;
+  }
+}

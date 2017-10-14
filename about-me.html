@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul id="myTopnav" class="topnav">
+      	  <li><a class="logo" href="index.html">
+						<div>
+							<img src="images/profile-6.png">
+							<span>Nikki</span>
+						</div>
+					</a></li>
+      	  <li><a href="about-me.html">About Me</a></li>
+      	  <li><a href="work-experience.html">Work Experience</a></li>
+					<li class="menu-icon">
+    				<a href="javascript:void(0);" onclick="myFunction()">
+              <img src="images/menu-bar-light.jpg" alt="">
+            </a>
+  				</li>
+      	</ul>
+      </nav>
+    </header>
+
+    <section id="about-me">
+      <h1>About Me</h1>
+      <article>
+      <span class="one-third wrap-right">
+        <img class="full-width-img box-shadow" src="images/train.jpg">
+      </span>
+      <span class="two-thirds">
+        <p>I am a software engineer living in New York City. I first began playing around with code back in the days of AOL Instant Messenger, when you could personalize your 'away message' with simple HTML and CSS. </p>
+        <p>However, it was not until I took a programming class in college that I decided to learn more. While I had previously been studying political science and history at Binghamton University, I realized that I was drawn to the practicality of being able to build an application and decided to switch my focus.</p>
+        <p>I moved to Brooklyn and enrolled in a degree for multimedia programming which would allow me to combine my love for art with coding. I was able to partake in several digital art classes, playing around with software such as Maya, Final Cut Pro, and Photoshop, while simultaneously learning about algorithms, data structures, and object oriented programming. </p>
+        <p>After college, I took a job at the New York Stock Exchange, where I was able to get my toe in the door and start tinkering. While I did learn a lot, the beaurocracy of working at a large company frustrated me. I began looking into start up companies and instantly fell in love with my next company: Shapeways.</p>
+        <p>Shapeways was a small, scrappy startup that hosted an e-commerce platform for 3D models. Moreover, they had a factory in Queens, where they actually produced the items. I was fascinated. The years led me through some amazingly fun times, complete with new friends and interesting technical challenges. Unfortunately, as so many do, I became a bit jaded after several years and decided to leave.</p>
+        <p>This past year, I decided to take some time away from work to reclaim my sanity. Having not had a break from work or school in many years, I was thrilled to be able to take this time for myself. I traveled quite a LOT and spent time with family and friends, kayaking, playing with several puppies, and finding my zen.</p>
+        <p>Now that I am feeling all refreshed, I am looking for my next career move. I can't wait to see what comes next!</p>
+        <p>For some more information on the technical challenges I have accomplished please take a look at my Work Experience.</p>
+        <p>Other things I enjoy: hiking, skiing, pups, burritos, and general shenanigans.</p>
+        <!-- <p>Feel free to sift through my personal sandbox, where I have some samples of things I've been playing around with lately, or take a look at my past work experience.</p> -->
+      </span>
+    </article>
+    </section>
+
+  </body>
+
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+      x.className += " responsive";
+  } else {
+      x.className = "topnav";
+  }
+}
+</script>
+
+</html>

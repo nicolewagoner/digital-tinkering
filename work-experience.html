@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul id="myTopnav" class="topnav">
+          <li><a class="logo" href="index.html">
+            <div>
+              <img src="images/profile-6.png">
+              <span>Nikki</span>
+            </div>
+          </a></li>
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="work-experience.html">Work Experience</a></li>
+          <li class="menu-icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+              <img src="images/menu-bar-light.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="work">
+      <h1>Work Experience</h1>
+      <article>
+
+        <h2>Shapeways, New York, New York</h2>
+        <span class="block">
+          <span class="role">Senior Software Engineer</span>
+          <span class="dates">January 2015 - October 2016 (2 years)</span>
+        </span>
+        <span class="block">
+          <span class="role">Software Engineer</span>
+          <span class="dates">November 2012 - January 2015 (2 years)</span>
+        </span>
+        <ul class="indent">
+          <li>Implemented new features and maintained existing functionality for an online 3D printing marketplace, including an e-commerce website and an internally built ERP system</li>
+          <li>Ownership of all price-related functionality, from add to cart through to purchase - a highly complex part of the website due to the nature of 3D printing user generated models</li>
+          <li>Led a major refactor of mySQL database schema, creating a more stable foundation</li>
+          <li>Onboarded new hires by introducing them to existing code patterns, architecture, and processes</li>
+          <li>Assisted interns and junior engineers through regular mentoring sessions</li>
+          <li>Ensured system scalability by reviewing proposed technical implementations</li>
+          <li>Enforced code quality by driving unit and automated testing across teams</li>
+        </ul>
+        <p>Technologies Used: PHP, MySQL databases, HTML, CSS, solr, python, PHPunit, memcached, javascript</p>
+        <p>Website: <a href="www.shapeways.com">www.shapeways.com</a></p>
+      </article>
+
+      <article>
+        <h2>New York Stock Exchange, New York, New York</h2>
+        <span class="block">
+          <span class="role">Software Engineer</span>
+          <span class="dates">September 2011 - Nov 2012 (1 year)</span>
+        </span>
+        <ul class="indent">
+          <li>Streamlined data center rollouts by writing tools for the Stock Exchange’s international team of network engineers</li>
+          <li>Maintained an app that allowed engineers to plan out their DC rollouts in scalable ways</li>
+          <li>Scheduled perl scripts were run nightly to parse device configurations using regex</li>
+          <li>Performed all tasks in the development lifecycle including project scope and definition, design, development, testing, and deployment</li>
+        </ul>
+        <p>Technologies Used: Flex, Perl, PHP, MySQL</p>
+      </article>
+
+    </section>
+
+  </body>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+    }
+
+    function expandAccordion() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+    }
+  </script>
+
+</html>

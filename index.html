@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" />
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <ul id="myTopnav" class="topnav">
+          <li><a class="logo brand" href="index.html">
+            <div>
+              <img src="images/profile-6.png">
+              <span>Nikki</span>
+            </div>
+          </a></li>
+          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="work-experience.html">Work Experience</a></li>
+          <li class="menu-icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+              <img src="images/menu-bar-light.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="full-width-img">
+      <div class="picture-main"></div>
+
+      <div id="home-logo" class="logo home-logo home-shrink">
+        <img src="images/profile-6.png">
+        <span>Nikki</span>
+      </div>
+
+			<div class="byline">Software engineer and digital tinkerer</div>
+    </section>
+
+		<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      var y = document.getElementById("home-logo");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        if(y) {
+          y.className = "logo home-logo home-jump";
+        }
+      } else {
+        x.className = "topnav";
+        if(y) {
+          y.className = "logo home-logo home-shrink";
+        }
+      }
+    }
+    </script>
+
+  </body>
+</html>
